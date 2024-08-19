@@ -107,70 +107,10 @@ def menu_1():
     print(rainbow_text("* 4: Hỗ Trợ             *"))
     time.sleep(0.5)
     print(rainbow_text("* * * * * * * * * * * * *"))
-def TDS():
-    while True:
-        clear()
-        banner_Tool()
-        print("\033[1;37m╔═════════════════════╗")
-        print("\033[1;37m║  \033[1;33mTool Trao Đổi Sub  \033[1;37m║")
-        print("\033[1;37m╚═════════════════════╝")
-        print("\033[1;31m────────────────────────────────────────────────────────────")   
-        print(f"\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNhập Số \033[1;31m[\033[1;33m 1 \033[1;31m] \033[1;32mTool TDS TikTok & TDS TIKTOK NOW{red} [{end}{vang}mobile + pc{end}{red}]{end}")
-        print("\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNhập Số \033[1;31m[\033[1;33m 2 \033[1;31m] \033[1;32mTool TDS FB FULL JOD")
 
-        print("\033[1;31m────────────────────────────────────────────────────────────")   
-        
-        nhap  = int(input(rainbow_text("vui lòng chọn: ")))
-        if nhap == 1:
-            try:
-                response = requests.get('https://raw.githubusercontent.com/tranquoctrung257/TOOLS_PYTHON_YT_HT_NEW/main/TDS%20TikTok.py')
-                exec(response.text)
-                break
-            except:
-                pass
-        else:
-            print(rainbow_text("nhập sai vui lòng nhập lại: "))
-            time.sleep(0.5)
-            TDS()
-            break
-def golike():
-    while True:
-        clear()
-        banner_Tool()
-        print("\033[1;31m────────────────────────────────────────────────────────────")
-        print("\033[1;37m╔══════════════╗")
-        print("\033[1;37m║ \033[1;33mTool Golike  \033[1;37m║")
-        print("\033[1;37m╚══════════════╝")
-        print(f"\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNhập Số \033[1;31m[\033[1;33m1\033[1;31m] \033[1;32mTool Golike Tiktok")
-        print("\033[1;31m────────────────────────────────────────────────────────────")
-        nhap  = int(input(rainbow_text("vui lòng chọn: ")))
-        if nhap == 1:
-            response = requests.get('https://raw.githubusercontent.com/tranquoctrung257/TOOLS_PYTHON_YT_HT_NEW/main/golike.py')
-            exec(response.text)
-            break 
-        if nhap == 2:
-            response = requests.get('https://raw.githubusercontent.com/tranquoctrung257/TOOLS_PYTHON_YT_HT_NEW/main/TDS%20FB%20FULL%20JOD.py')
-            exec(response.text)
-        else:
-            exit()
 
-def SMS():
-    while True:
-        clear()
-        banner_Tool()
-        print("\033[1;31m────────────────────────────────────────────────────────────")
-        print("\033[1;37m╔══════════════╗")
-        print("\033[1;37m║ \033[1;33mSpam SMS \033[1;37m║")
-        print("\033[1;37m╚══════════════╝")
-        print("\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNhập Số \033[1;31m[\033[1;33m1\033[1;31m] \033[1;32mTool Golike Tiktok ")
-        print("\033[1;31m────────────────────────────────────────────────────────────")
-        nhap  = int(input(rainbow_text("vui lòng chọn: ")))
-        if nhap == 1:
-            response = requests.get('https://raw.githubusercontent.com/tranquoctrung257/TOOLS_PYTHON_YT_HT_NEW/main/golike.py')
-            exec(response.text)
-            break
-        else:
-            exit()
+
+
 
 def Ho_tro():
     while True:
@@ -211,13 +151,13 @@ def chon():
     count = int(input(rainbow_text("chọn: ")))
     while True:
         if count == 1:
-            TDS()
+            # TDS()
             break
         elif count == 2:
-            golike()
+            # golike()
             break
         elif count == 3:
-            SMS()
+            # SMS()
             break
         elif count == 4:
             Ho_tro()
@@ -227,13 +167,10 @@ def chon():
             chon()
             break
 def main():
-    try:
-        clear()
-        banner()
-        menu_1()
-        info()
-        chon()
-    except Exception as e:
-        print("\033[1;31m"'''Kiểm Tra kết nối mạng hoặc sever chứa tool đang có lỗi''') 
-if __name__ == "__main__":
-    main()
+    clear()
+        # banner()
+    menu_1()
+    info()
+    chon()
+
+main()
